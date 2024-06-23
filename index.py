@@ -50,7 +50,7 @@ model.add(Dense(3, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
 
 # Treinando o modelo
-# model.fit(X, Y, epochs=10, batch_size=32, validation_split=0.2)  # Ajuste os parâmetros conforme necessário
+model.fit(X, Y, epochs=5, batch_size=10, validation_split=0.2)  # Ajuste os parâmetros conforme necessário
 
 # Função para carregar e prever a imagem selecionada
 def load_and_predict_image():
